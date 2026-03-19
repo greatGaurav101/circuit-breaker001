@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 @FeignClient( name = "payment-service",
               url="http://localhost:8081/payment",
-              fallback = PaymentFallback.class )
+              fallbackFactory = PaymentFallbackFactory.class )
 public interface PaymentClient {
     @GetMapping("/{orderId}")
     public String processPayment(@PathVariable Long orderId);
