@@ -1,7 +1,6 @@
 package com.orderservice.client;
 
-import com.orderservice.controller.PaymentFallback;
-import com.orderservice.controller.PaymentFallbackFactory;
+import com.orderservice.component.PaymentFallbackFactory;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

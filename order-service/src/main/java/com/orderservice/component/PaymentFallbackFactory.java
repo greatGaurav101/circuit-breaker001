@@ -1,4 +1,4 @@
-package com.orderservice.controller;
+package com.orderservice.component;
 
 import com.orderservice.client.PaymentClient;
 import org.springframework.cloud.openfeign.FallbackFactory;
